@@ -1,4 +1,3 @@
-/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 import { connect } from 'react-redux';
 
@@ -11,7 +10,7 @@ class Status extends React.Component {
     }
 
     return (
-      <div>
+      <div className="item">
         Status:
         {status}
       </div>

@@ -5,9 +5,11 @@ import ControlButton from './ControlButton';
 
 const App = () => (
   <div className="ui container">
-    <Status />
-    <CountryList />
-    <ControlButton />
+    <div className="ui relaxed divided items">
+      <Status />
+      <CountryList />
+      <ControlButton />
+    </div>
   </div>
 );
 

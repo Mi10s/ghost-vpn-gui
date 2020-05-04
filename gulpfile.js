@@ -8,7 +8,7 @@ gulp.task('html', () => gulp.src('index.html')
   .pipe(gulp.dest('app/')));
 
 // 2. Compile CSS file and move them to the app folder
-gulp.task('css', () => gulp.src(['src/**/*.css', 'css/semantic.min.css'])
+gulp.task('css', () => gulp.src(['src/**/*.css', 'static/css/semantic.min.css'])
   .pipe(css())
   .pipe(gulp.dest('app/')));
 

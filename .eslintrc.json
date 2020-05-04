@@ -22,7 +22,12 @@
     "plugins": [
         "react"
     ],
+    "parser": "babel-eslint",
     "rules": {
-        "react/prefer-stateless-function": [2, { "ignorePureComponents": true }]
+        "import/no-named-as-default": 0,
+        "import/no-named-as-default-member": 0,
+        "react/prefer-stateless-function": 0,
+        "react/prop-types": 0,
+        "react/destructuring-assignment": 0
     }
 }

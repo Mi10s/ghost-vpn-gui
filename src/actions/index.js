@@ -4,6 +4,7 @@ import {
   VPN_DISCONNECTED,
   VPN_UNKNOWN,
   COUNTRY_SELECTED,
+  COUNTRY_LIST,
 } from './types';
 
 sudo.setPassword(process.env.USER_PASSWD);
@@ -38,7 +39,10 @@ export const disconnectVpn = () => (dispatch) => {
 
 export const selectCountry = (code) => ({
   type: COUNTRY_SELECTED,
-  payload: {
-    code,
-  },
+  payload: code,
+});
+
+export const createCountryList = (countryList) => ({
+  type: COUNTRY_LIST,
+  payload: countryList,
 });
