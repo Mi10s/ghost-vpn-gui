@@ -41,7 +41,7 @@ class CountryList extends React.Component {
 
   render() {
     if (this.props.country.countryList.length === 0) {
-      return <div className="item">Loading...</div>;
+      return <div className="item" style={{ color: '#fff' }}>Loading countries...</div>;
     }
 
     return (

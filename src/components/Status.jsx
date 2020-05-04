@@ -6,11 +6,11 @@ class Status extends React.Component {
     const { status } = this.props.connection;
 
     if (!status) {
-      return <div>Waiting for status</div>;
+      return <div style={{ color: '#fff' }}>Waiting for status</div>;
     }
 
     return (
-      <div className="item">
+      <div className="item" style={{ color: '#fff' }}>
         Status:
         {status}
       </div>

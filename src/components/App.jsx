@@ -4,11 +4,20 @@ import CountryList from './CountryList';
 import ControlButton from './ControlButton';
 
 const App = () => (
-  <div className="ui container">
-    <div className="ui relaxed divided items">
-      <Status />
-      <CountryList />
-      <ControlButton />
+  <div
+    style={
+      {
+        background: 'url("./img/background.jpg") no-repeat fixed center',
+        height: '100vh',
+      }
+    }
+  >
+    <div className="ui container">
+      <div className="ui relaxed divided items">
+        <Status />
+        <CountryList />
+        <ControlButton />
+      </div>
     </div>
   </div>
 );
